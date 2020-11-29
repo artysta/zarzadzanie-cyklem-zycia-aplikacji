@@ -1,0 +1,1 @@
+# zarzadzanie-cyklem-zycia-aplikacji
