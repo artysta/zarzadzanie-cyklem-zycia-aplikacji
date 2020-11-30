@@ -1,4 +1,4 @@
-# zarzadzanie-cyklem-zycia-aplikacji
+# **zarzadzanie_cyklem_zycia_aplikacji_wsei**
 
 Repozytorium związane z przedmiotem **Zarządzanie cyklem życia aplikacji** służące nauce zarządzania kodem przy użyciu **sytemu kontroli wersji Git**.
 
