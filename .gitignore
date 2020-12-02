@@ -1,1 +1,8 @@
 /sample-txt-file.txt
+
+ *.pdf
+ *.tmp
+ *.log
+
+ log/
+ build/
