@@ -48,7 +48,7 @@ Projekt obejmuje:
 
 ## #4 Śledzenie, zatwierdzanie i wysyłanie zmian na serwer
 
-- Śledzenie zmian (dodawanie i usuwanie plików ze staging area).
+- Śledzenie zmian (dodawanie i usuwanie plików ze **staging area**).
 
     - Dodawanie wszystkich plików.
 
@@ -62,9 +62,17 @@ Projekt obejmuje:
 
           git add -u
 
-    - Usuwanie śledzonych plików.
+    - Usuwanie plików ze **staging area**.
 
           git restore --staged nazwa_pliku_1 nazwa_pliku_2
+
+    - PERMANENTNE usuwanie plików, które nie znajdują się w **staging area**.
+
+          git clean -df
+          
+    - PERMANENTNE usuwanie ZMIAN z plików, które nie znajdują się w **staging area**
+
+          git checkout -- .
 
 - Zatwierdzanie zmian.
 
@@ -75,7 +83,11 @@ Projekt obejmuje:
     - Zatwierdzanie zmain dla konkretnych śledzonych plików.
 
           git commit -m "Komentarz dotyczący wprowadzonych zmian." nazwa_pliku_1 nazwa_pliku_2
-
+    
+    - Zmiana wiadomości poprzedniego commita (wcześniej można za pomocą `git add` dodać do **staging area** pliki, o których w poprzednim commicie zapomnieliśmy - jeśli chcemy tylko dodać do poprzedniego commita pliki, ale nie chcemy zmieniać wiadomości, możemy użyć `git commit --amend --no-edit`)
+    
+          git commit --amend -m "Zaktualizowany komentarz"
+          
 - Wysyłanie wprowadzonych zmian na serwer.
 
       git push origin master
